@@ -44,6 +44,7 @@ jobs:
   test:
     docker:
       - image: circleci/elixir:1.7.2
+        parallelism: 4
         environment:
           MIX_ENV: test
       - image: circleci/postgres:10.4-alpine-postgis
@@ -90,6 +91,7 @@ jobs:
   credo:
     docker:
       - image: circleci/elixir:1.7.2
+        parallelism: 4
         environment:
           MIX_ENV: dev
     working_directory: ~/app
@@ -123,6 +125,7 @@ jobs:
   dialyzer:
     docker:
       - image: circleci/elixir:1.7.2
+        parallelism: 4
         environment:
           MIX_ENV: dev
     working_directory: ~/app
