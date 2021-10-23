@@ -168,10 +168,10 @@ jobs:
   test2:
     docker:
       - image: circleci/elixir:1.7.2
+        parallelism: 4
         environment:
           MIX_ENV: test
       - image: circleci/postgres:10.4-alpine-postgis
-        parallelism: 4
         environment:
           POSTGRES_USER: postgres
           POSTGRES_DB: golden_path_test
