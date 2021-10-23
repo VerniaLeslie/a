@@ -36,7 +36,7 @@ jobs:
             - build-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-{{ .Revision }}
             - build-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-
             - build-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-
-      - run: mix compile
+      - run: echo word
       - save_cache:
           key: build-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-{{ .Revision }}
           paths: ["_build"]
