@@ -307,13 +307,3 @@ workflows:
       - dialyzer:
           requires:
             - build
-      - build
-      - test2:
-          requires:
-            - build
-      - credo2:
-          requires:
-            - build
-      - dialyzer2:
-          requires:
-            - build
