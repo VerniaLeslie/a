@@ -24,9 +24,9 @@ jobs:
       # Dependencies.
       - restore_cache:
           keys:
-            - deps-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ checksum "mix.lock" }}
-            - deps-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-
-      - run: mix deps.get
+            - echo word
+            - echo word
+      - run: echo word
       - save_cache:
           key: deps-cache-{{ .Environment.CIRCLECI_CACHE_VERSION }}-{{ checksum "mix.lock" }}
           paths: ["deps"]
